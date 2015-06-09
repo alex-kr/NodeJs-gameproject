@@ -38,15 +38,7 @@ require(objectFiles, function () {
       stage.add('viewport').follow(player);
     });
 
-	socket.on('updated', function (data) {
-
-		var temp = new Q.Player({ playerId: data['playerId'], x: data['x'], y: data['y'], sheet: data['sheet'], opacity: data['opacity'], invincible: data['invincible'], tagged: data['tagged'] });
-		players.push({ player: temp, playerId: data['playerId'] });
-		stage.insert(temp);
-
-});
-	
-  /*   socket.on('updated', function (data) {
+    socket.on('updated', function (data) {
       var actor = players.filter(function (obj) {
         return obj.playerId == data['playerId'];
       })[0];
@@ -64,7 +56,7 @@ require(objectFiles, function () {
         // stage.insert(temp);
       }
     });
- */
+
     socket.on('tagged', function (data) {
       if (data['playerId'] == selfId) {
         player.p.sheet = 'enemy';
