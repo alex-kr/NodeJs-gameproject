@@ -24,7 +24,7 @@ io.on('connection', function (socket) {
       socket.emit('connected', { playerId: id });
     }
     io.emit('count', { playerCount: playerCount });
-  }, 1500);
+  }, 4000);
   
   socket.on('disconnect', function () {
     playerCount--;
