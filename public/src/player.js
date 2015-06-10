@@ -17,7 +17,7 @@ require([], function () {
           temp.destroy();
         }
         temp.p.update = false;
-      }, 3000);
+      }, 1500);
     } 
   });
 

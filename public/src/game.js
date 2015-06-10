@@ -66,7 +66,7 @@ require(objectFiles, function () {
           return obj.playerId == data['playerId'];
         })[0];
         if (actor) {
-          actor.player.p.sheet = 'enemy'
+          actor.player.p.sheet = 'enemy';
         }
       }
     });
