@@ -27,7 +27,7 @@ require(objectFiles, function () {
       selfId = data['playerId'];
       if (data['tagged']) {
         player = new Q.Player({ playerId: selfId, x: 100, y: 100, socket: socket });
-        player.p.sheet = 'enemy'
+        player.p.sheet = 'enemy';
         player.p.tagged = true;
         stage.insert(player);
       } else {
