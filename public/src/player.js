@@ -17,11 +17,8 @@ require([], function () {
           temp.destroy();
         }
         temp.p.update = false;
-<<<<<<< HEAD
       }, 1500);
-=======
-      }, 3000);
->>>>>>> df187b28ffd2288e7e6cb6418cdb862017f521fa
+
     } 
   });
 
