@@ -51,15 +51,11 @@ require(objectFiles, function () {
         actor.player.p.tagged = data['tagged'];
         actor.player.p.update = true;
       } else {
-<<<<<<< HEAD
-         var temp = new Q.Actor({ playerId: data['playerId'], x: data['x'], y: data['y'], sheet: data['sheet'], opacity: data['opacity'], invincible: data['invincible'], tagged: data['tagged'] });
-         players.push({ player: temp, playerId: data['playerId'] });
-         stage.insert(temp);
-=======
+
         var temp = new Q.Actor({ playerId: data['playerId'], x: data['x'], y: data['y'], sheet: data['sheet'], opacity: data['opacity'], invincible: data['invincible'], tagged: data['tagged'] });
         players.push({ player: temp, playerId: data['playerId'] });
         stage.insert(temp);
->>>>>>> df187b28ffd2288e7e6cb6418cdb862017f521fa
+
       }
     });
 
